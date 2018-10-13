@@ -1,0 +1,3 @@
+fred line1
+fred line2
+fred line3

@@ -5,7 +5,7 @@ use utf8;
 
 while(<>){
     chomp($_);
-    if(m/\b(?<word>\w*a)\b(?<after>.{0,5})/){
+    if(m/\b (?<word> \w* a) \b (?<after> .{0,5})/x){
         print "Matched: 'word' contains '$+{word}'\n";
         print "'after' contains '$+{after}'\n";
     }else{

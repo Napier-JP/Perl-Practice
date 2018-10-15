@@ -5,7 +5,7 @@ use utf8;
 
 my $arg = $ARGV[0];
 open my $input, "<", $arg;
-open my $output, ">", "$arg.out";
+open my $output, ">", "${arg}.out";
 
 while(<$input>){
     s/fred/Larry/ig; #case-insensitive, global substitution

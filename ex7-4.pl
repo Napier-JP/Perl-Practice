@@ -4,7 +4,7 @@ use warnings;
 use utf8;
 
 while (<>){
-    if(m/^[A-Z][a-z]+/){
+    if(m/\A[A-Z][a-z]+/){
         print $_;
     }
 }
